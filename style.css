@@ -1,6 +1,7 @@
 /* global */
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 .profile-picture {
     position: fixed;
     padding: 0;
@@ -9,10 +10,29 @@
     left: 0;
     width: 70%;
     height: 100%;
+    animation: fadeIn 1s ease-in-out;
     background-image: url('https://s.gravatar.com/avatar/f00946fbd1a30d45a1122c2d1b7cb966?s=2048');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 70%;
+    }
 }
 
 .profile-data {
@@ -23,6 +43,7 @@
     left: 70%;
     width: 30%;
     height: 100%;
+    animation: slideIn 1s ease-in-out;
 }
 
 .flex-container {
