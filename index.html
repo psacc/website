@@ -10,9 +10,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Paolo Sacconier</title>
@@ -44,11 +46,21 @@
             <a href="https://www.linkedin.com/in/paolosacconier"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/psacc"><i class="fab fa-github"></i></a>
         </div>
-        <div class="section-2 flex-item">
-            <h2>Contact</h2>
-            <p>paolo@sacconier.net</p>
+        <div class="flex-container flex-item">
+            <div class="section-2 flex-item">
+                <h2>Contact</h2>
+                <p>paolo@sacconier.net</p>
+            </div>
+            <div class="flex-item">
+                <pre><code class="language-java">
+if (coffee.isEmpty()) { refill(); } else { continueWorking(); }  // The coder's cycle.
+                </code></pre>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js"></script>
 </body>
 
 </html>

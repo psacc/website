@@ -120,7 +120,7 @@ body {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    padding-bottom: 10vmin;
+    padding-bottom: 5vmin;
 }
 
 body {
@@ -199,4 +199,13 @@ a {
 .white:hover {
     position: relative;
     padding-left: 10px;
+}
+
+pre code {
+    white-space: pre-wrap !important;
+}
+
+pre {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(100px) !important;
 }
