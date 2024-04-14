@@ -213,6 +213,24 @@ pre code {
     perspective: 1000px;
 }
 
+@keyframes partial-flip {
+
+    0%,
+    100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(2);
+        transform: scale(1.1);
+    }
+}
+
+#flip-container:hover {
+    cursor: pointer;
+    animation: partial-flip 1s ease-in-out;
+}
+
 #container {
     transform-style: preserve-3d;
 }
