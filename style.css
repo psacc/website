@@ -205,7 +205,48 @@ pre code {
     white-space: pre-wrap !important;
 }
 
+#container {
+    perspective: 1000px;
+}
+
+#flip-container {
+    perspective: 1000px;
+}
+
+#container {
+    transform-style: preserve-3d;
+}
+
 pre {
     background-color: rgba(0, 0, 0, 0.2) !important;
     backdrop-filter: blur(100px) !important;
+    backface-visibility: hidden;
+}
+
+@keyframes flip-first-half {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+@keyframes flip-second-half {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.flip-first-half {
+    animation: flip-first-half 0.3s ease-out forwards;
+}
+
+.flip-second-half {
+    animation: flip-second-half 0.3s ease-in forwards;
 }

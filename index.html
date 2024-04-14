@@ -52,9 +52,13 @@
                 <p>paolo@sacconier.net</p>
             </div>
             <div class="flex-item">
-                <pre><code class="language-java">
+                <div id="flip-container">
+                    <div id="container">
+                        <pre><code class="language-java">
 if (coffee.isEmpty()) { refill(); } else { continueWorking(); }  // The coder's cycle.
-                </code></pre>
+                        </code></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -76,20 +80,31 @@ if (coffee.isEmpty()) { refill(); } else { continueWorking(); }  // The coder's 
         }
 
         function renderPun(pun) {
-            const codeElement = document.querySelector('pre code');
-            codeElement.className = `language-${pun.language}`;
-            codeElement.textContent = pun.joke;
-            Prism.highlightAll();
+            const containerElement = document.querySelector('#container');
+            const codeElement = containerElement.querySelector('code');
+            containerElement.className = 'flip-first-half';
+            containerElement.addEventListener('animationend', function handler() {
+                containerElement.removeEventListener('animationend', handler);
+                codeElement.className = `language-${pun.language}`;
+                codeElement.textContent = pun.joke;
+                Prism.highlightAll();
+                containerElement.className = 'flip-second-half';
+            });
+        }
+
+        function changePun(lines) {
+            let pun = null;
+            while (!pun) {
+                const randomIndex = Math.floor(Math.random() * lines.length);
+                pun = parsePun(lines[randomIndex]);
+            }
+            renderPun(pun);
         }
 
         loadPuns()
             .then(lines => {
-                let pun = null;
-                while (!pun) {
-                    const randomIndex = Math.floor(Math.random() * lines.length);
-                    pun = parsePun(lines[randomIndex]);
-                }
-                renderPun(pun);
+                changePun(lines);
+                document.querySelector('pre').addEventListener('click', () => changePun(lines));
             })
             .catch(error => console.error('Error:', error));
     </script>
