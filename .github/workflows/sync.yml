@@ -19,5 +19,4 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
         run: |
-          git remote add destination https://x-access-token:$PAT@github.com/psacc/minimalist-portfolio.git
-          git push destination HEAD:master
+          git push https://x-access-token:$PAT@github.com/psacc/minimalist-portfolio.git HEAD:master
