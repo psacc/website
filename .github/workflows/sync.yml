@@ -19,4 +19,5 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
         run: |
+          git config --unset http.https://github.com/.extraheader
           git push https://x-access-token:$PAT@github.com/psacc/minimalist-portfolio.git HEAD:master
