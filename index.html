@@ -1,113 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Paolo Sacconier</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96900080-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-96900080-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'UA-96900080-1');
+      gtag('config', 'UA-96900080-1');
     </script>
-</head>
+  </head>
 
-<body>
-    <div class="profile-picture profile-picture-background">
-    </div>
-    <div id="picture-frame" class="profile-picture">
-    </div>
+  <body>
+    <div class="profile-picture profile-picture-background"></div>
+    <div id="picture-frame" class="profile-picture"></div>
     <div class="profile-data flex-container">
-        <div class="section-1 flex-item">
-            <i class="fas fa-code fa-5x white"></i>
-            <h2>Paolo Sacconier</h2>
-            <p>Lyon, France.</p>
-            <a href="https://www.linkedin.com/in/paolosacconier"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/psacc"><i class="fab fa-github"></i></a>
+      <div class="section-1 flex-item">
+        <i class="fas fa-code fa-5x white"></i>
+        <h2>Paolo Sacconier</h2>
+        <p>Lyon, France.</p>
+        <a href="https://www.linkedin.com/in/paolosacconier"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/psacc"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="flex-container flex-item">
+        <div class="section-2 flex-item">
+          <h2>Contact</h2>
+          <p>paolo@sacconier.net</p>
         </div>
-        <div class="flex-container flex-item">
-            <div class="section-2 flex-item">
-                <h2>Contact</h2>
-                <p>paolo@sacconier.net</p>
-            </div>
-            <div class="flex-item">
-                <div id="flip-container">
-                    <div id="container">
-                        <pre><code class="language-java">
+        <div class="flex-item">
+          <div id="flip-container">
+            <div id="container">
+              <pre><code class="language-java">
 if (coffee.isEmpty()) { refill(); } else { continueWorking(); }  // The coder's cycle.
                         </code></pre>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
-    <script>
-        function loadPuns() {
-            return fetch('./code_pun/pun.txt')
-                .then(response => response.text())
-                .then(text => text.split('\n'));
-        }
-
-        function parsePun(line) {
-            const match = line.match(/^(.*?):(.*)$/);
-            return match ? { language: match[1].trim(), joke: match[2].trim() } : null;
-        }
-
-        function renderPun(pun) {
-            const containerElement = document.querySelector('#container');
-            const codeElement = containerElement.querySelector('code');
-            containerElement.className = 'flip-first-half';
-            containerElement.addEventListener('animationend', function handler() {
-                containerElement.removeEventListener('animationend', handler);
-                codeElement.className = `language-${pun.language}`;
-                codeElement.textContent = pun.joke;
-                Prism.highlightAll();
-                containerElement.className = 'flip-second-half';
-            });
-        }
-
-        function changePun(lines) {
-            let pun = null;
-            while (!pun) {
-                const randomIndex = Math.floor(Math.random() * lines.length);
-                pun = parsePun(lines[randomIndex]);
-            }
-            renderPun(pun);
-        }
-
-        loadPuns()
-            .then(lines => {
-                changePun(lines);
-                document.querySelector('pre').addEventListener('click', () => changePun(lines));
-            })
-            .catch(error => console.error('Error:', error));
-    </script>
-</body>
-
+    <script src="pun.js"></script>
+  </body>
 </html>

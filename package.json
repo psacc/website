@@ -7,12 +7,18 @@
   "scripts": {
     "lint:html": "htmlhint '**/*.html'",
     "lint:css": "stylelint '**/*.css'",
-    "lint:js": "eslint '**/*.js'",
-    "lint": "npm run lint:html && npm run lint:css && npm run lint:js"
+    "lint:js": "standard '**/*.js'",
+    "format:html": "prettier --write '**/*.html'",
+    "format:css": "prettier --write '**/*.css'",
+    "format:js": "standard --fix '**/*.js'",
+    "format": "npm run format:html && npm run format:css && npm run format:js",
+    "lint": "npm run format && npm run lint:html && npm run lint:css && npm run lint:js"
   },
   "devDependencies": {
-    "eslint": "^9.0.0",
     "htmlhint": "^1.1.4",
-    "stylelint": "^16.3.1"
+    "prettier": "^3.2.5",
+    "standard": "^17.1.0",
+    "stylelint": "^16.3.1",
+    "stylelint-prettier": "^5.0.0"
   }
 }
