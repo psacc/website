@@ -12,10 +12,13 @@
     "format:css": "prettier --write '**/*.css'",
     "format:js": "standard --fix '**/*.js'",
     "format": "npm run format:html && npm run format:css && npm run format:js",
-    "lint": "npm run format && npm run lint:html && npm run lint:css && npm run lint:js"
+    "lint": "npm run format && npm run lint:html && npm run lint:css && npm run lint:js",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
+    "husky": "^8.0.0",
+    "husky-init": "^8.0.0",
     "prettier": "^3.2.5",
     "standard": "^17.1.0",
     "stylelint": "^16.3.1",
