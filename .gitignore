@@ -1,0 +1,38 @@
+# npm
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+lib-cov
+coverage
+.nyc_output
+.npm
+*.tgz
+
+# Testing
+*.swp
+*.bak
+*.tmp
+
+# IDEs and editors
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+.eclipse
+*.launch
+*.iml
+*.ipr
+*.iws
+out/
