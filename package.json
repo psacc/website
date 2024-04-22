@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
-    "husky": "^8.0.0",
+    "husky": "^9.0.11",
     "husky-init": "^8.0.0",
     "prettier": "^3.2.5",
     "standard": "^17.1.0",
