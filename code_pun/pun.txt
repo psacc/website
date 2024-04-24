@@ -9,6 +9,7 @@ python: with open('life', 'r') as reality: pass # If only understanding life was
 python: True if love else False # Simplifying complex emotions.
 python: ['Do', 'or', 'do not'].remove('try') # Taking advice from Yoda.
 python: if life.gives_you.lemons: print("make lemonade") # Making the best of what you have.
+python: try: breathe(); except: oxygen_error # When breathing isn't as easy as expected.
 
 # Java Code Jokes
 java: if (coffee.isEmpty()) { refill(); } else { continueWorking(); } // The coder's cycle.
@@ -20,6 +21,7 @@ java: class Ship { public int sink() { return 0; } } // Titanic's method.
 java: boolean isFunny = joke instanceof Humor; // Checking for a type of humor.
 java: public static void main(String[] args) { System.exit(0); } // That escalated quickly.
 java: switch(day) { case MONDAY: coffee++; break; default: work--; break; } // A typical week.
+java: if (life.isHard()) { try { relax(); } catch (StressException e) { e.relaxAnyway(); } } // Handling life's stresses.
 
 # JavaScript Code Jokes
 javascript: let life = []; life.push('study', 'work', 'retire'); life.shift(); // Life without 'study'.
@@ -32,3 +34,4 @@ javascript: try { throw new Error("Nothing wrong here"); } catch(e) { console.lo
 javascript: Object.is(NaN, NaN); // True, finally they agree that NaN is NaN.
 javascript: Array(16).join("lol" - 2) + " Batman!"; // Outputs "NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!"
 javascript: typeof (typeof 1); // Outputs 'string', because everything in JavaScript is a string deep down.
+javascript: console.assert(life.isGood, "Life assertion failed!"); // Debugging when life doesn't feel right.
