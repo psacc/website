@@ -1,0 +1,37 @@
+# Python Code Jokes
+python: try: life.makeSense() except: pass # Just like in real life.
+python: list = ['peace', 'love', 'happiness']; del list # If only it were that easy.
+python: while not asleep: sheep += 1 # Counting sheep to sleep.
+python: lambda soul: None # Lost souls in functional programming.
+python: class Cat: def __str__(self): return "I'm a cat." # Every cat's true identity.
+python: import antigravity # Sometimes you need to escape the Earth's pull.
+python: with open('life', 'r') as reality: pass # If only understanding life was this easy.
+python: True if love else False # Simplifying complex emotions.
+python: ['Do', 'or', 'do not'].remove('try') # Taking advice from Yoda.
+python: if life.gives_you.lemons: print("make lemonade") # Making the best of what you have.
+python: try: breathe(); except: oxygen_error # When breathing isn't as easy as expected.
+
+# Java Code Jokes
+java: if (coffee.isEmpty()) { refill(); } else { continueWorking(); } // The coder's cycle.
+java: try { Thread.sleep(1000); } catch (InterruptedException e) { Thread.currentThread().start(); } // Insomnia.
+java: boolean canChange = false; assert canChange == true; // Wishful thinking.
+java: for (int i = 0; i < 10; i++) System.out.println(i); // Counting like a computer.
+java: class Work { public void stress() { System.out.println("Too much!"); } } // Daily grind.
+java: class Ship { public int sink() { return 0; } } // Titanic's method.
+java: boolean isFunny = joke instanceof Humor; // Checking for a type of humor.
+java: public static void main(String[] args) { System.exit(0); } // That escalated quickly.
+java: switch(day) { case MONDAY: coffee++; break; default: work--; break; } // A typical week.
+java: if (life.isHard()) { try { relax(); } catch (StressException e) { e.relaxAnyway(); } } // Handling life's stresses.
+
+# JavaScript Code Jokes
+javascript: let life = []; life.push('study', 'work', 'retire'); life.shift(); // Life without 'study'.
+javascript: !!'false' == !!'true'; // Both are true because of type coercion.
+javascript: console.log(('b'+'a'+ + 'a' + 'a').toLowerCase()); // Outputs 'banana'.
+javascript: let coffee = null; console.log(coffee ?? 'Brew more!'); // Nullish coalescing in action.
+javascript: const reality = {check: Math.random() < 0.5}; reality.check || console.error("Reality error!"); // Sometimes reality is wrong.
+javascript: setTimeout(() => console.log("Loading patience..."), 1000); // Patience required.
+javascript: try { throw new Error("Nothing wrong here"); } catch(e) { console.log(e.message); } // Throwing custom errors.
+javascript: Object.is(NaN, NaN); // True, finally they agree that NaN is NaN.
+javascript: Array(16).join("lol" - 2) + " Batman!"; // Outputs "NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!"
+javascript: typeof (typeof 1); // Outputs 'string', because everything in JavaScript is a string deep down.
+javascript: console.assert(life.isGood, "Life assertion failed!"); // Debugging when life doesn't feel right.
