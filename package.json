@@ -5,15 +5,16 @@
   "author": "Paolo Sacconier",
   "license": "MIT",
   "scripts": {
-    "lint:html": "htmlhint '**/*.html'",
-    "lint:css": "stylelint '**/*.css'",
-    "lint:js": "standard '**/*.js'",
-    "format:html": "prettier --write '**/*.html'",
-    "format:css": "prettier --write '**/*.css'",
-    "format:js": "standard --fix '**/*.js'",
+    "lint:html": "htmlhint 'src/**/*.html'",
+    "lint:css": "stylelint 'src/**/*.css'",
+    "lint:js": "standard 'src/**/*.js'",
+    "format:html": "prettier --write 'src/**/*.html'",
+    "format:css": "prettier --write 'src/**/*.css'",
+    "format:js": "standard --fix 'src/**/*.js'",
     "format": "npm run format:html && npm run format:css && npm run format:js",
     "lint": "npm run format && npm run lint:html && npm run lint:css && npm run lint:js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "mkdir -p dist && cp -R src/* dist/"
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
