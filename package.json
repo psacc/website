@@ -14,7 +14,8 @@
     "format": "npm run format:html && npm run format:css && npm run format:js",
     "lint": "npm run format && npm run lint:html && npm run lint:css && npm run lint:js",
     "prepare": "husky install",
-    "build": "mkdir -p dist && cp -R src/* dist/"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir -p dist && cp -R src/* dist/"
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
