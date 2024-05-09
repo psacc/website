@@ -22,6 +22,7 @@ java: boolean isFunny = joke instanceof Humor; // Checking for a type of humor.
 java: public static void main(String[] args) { System.exit(0); } // That escalated quickly.
 java: switch(day) { case MONDAY: coffee++; break; default: work--; break; } // A typical week.
 java: if (life.isHard()) { try { relax(); } catch (StressException e) { e.relaxAnyway(); } } // Handling life's stresses.
+java: int coffee = 1; coffee <<= 1; // Now coffee is 2, because programmers double their coffee.
 
 # JavaScript Code Jokes
 javascript: let life = []; life.push('study', 'work', 'retire'); life.shift(); // Life without 'study'.
