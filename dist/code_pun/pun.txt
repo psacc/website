@@ -36,3 +36,4 @@ javascript: Object.is(NaN, NaN); // True, finally they agree that NaN is NaN.
 javascript: Array(16).join("lol" - 2) + " Batman!"; // Outputs "NaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!"
 javascript: typeof (typeof 1); // Outputs 'string', because everything in JavaScript is a string deep down.
 javascript: console.assert(life.isGood, "Life assertion failed!"); // Debugging when life doesn't feel right.
+javascript: console.log([1] + [2] - [3]); // "9", because in JavaScript, array addition and subtraction can be surprising!
