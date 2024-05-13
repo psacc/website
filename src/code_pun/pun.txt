@@ -10,6 +10,7 @@ python: True if love else False # Simplifying complex emotions.
 python: ['Do', 'or', 'do not'].remove('try') # Taking advice from Yoda.
 python: if life.gives_you.lemons: print("make lemonade") # Making the best of what you have.
 python: try: breathe(); except: oxygen_error # When breathing isn't as easy as expected.
+python: def procrastinate(): pass # The universal method.
 
 # Java Code Jokes
 java: if (coffee.isEmpty()) { refill(); } else { continueWorking(); } // The coder's cycle.
