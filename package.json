@@ -5,6 +5,7 @@
   "author": "Paolo Sacconier",
   "license": "MIT",
   "scripts": {
+    "start": "http-server ./dist -p 8080",
     "lint:html": "htmlhint 'src/**/*.html'",
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:js": "standard 'src/**/*.js'",
@@ -15,10 +16,14 @@
     "lint": "npm run format && npm run lint:html && npm run lint:css && npm run lint:js",
     "prepare": "husky install",
     "clean": "rm -rf dist",
-    "build": "npm run clean && mkdir -p dist && cp -R src/* dist/"
+    "build": "npm run clean && mkdir -p dist && cp -R src/* dist/",
+    "test:visual": "backstop test --no-open",
+    "test:visual:approve": "backstop approve"
   },
   "devDependencies": {
+    "backstopjs": "^6.3.23",
     "htmlhint": "^1.1.4",
+    "http-server": "^14.1.1",
     "husky": "^9.0.11",
     "husky-init": "^8.0.0",
     "prettier": "^3.2.5",
