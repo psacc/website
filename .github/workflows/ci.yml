@@ -32,7 +32,7 @@ jobs:
       run: npm run build 
 
     - name: Run tests
-      run: npm test # Replace with your test command, e.g., npm run test:visual
+      run: npm run start-and-test
 
     - name: Check for changes
       run: |

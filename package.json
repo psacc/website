@@ -19,7 +19,8 @@
     "build": "npm run clean && mkdir -p dist && cp -R src/* dist/",
     "test:visual": "backstop test --no-open",
     "test:visual:approve": "backstop approve",
-    "test": "npm run lint && npm run test:visual"
+    "test": "npm run lint && npm run test:visual",
+    "start-and-test": "http-server ./dist -p 8080 & sleep 5; npm run test; kill $!"
   },
   "devDependencies": {
     "backstopjs": "^6.3.23",
