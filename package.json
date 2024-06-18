@@ -18,7 +18,8 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && mkdir -p dist && cp -R src/* dist/",
     "test:visual": "backstop test --no-open",
-    "test:visual:approve": "backstop approve"
+    "test:visual:approve": "backstop approve",
+    "test": "npm run lint && npm run test:visual"
   },
   "devDependencies": {
     "backstopjs": "^6.3.23",
