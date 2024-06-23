@@ -40,3 +40,6 @@ out/
 # BackstopJS test artifacts
 backstop_data/bitmaps_test
 backstop_data/html_report
+
+#build output dir
+dist/
