@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ["Continuous Integration"]
+    workflows: ['Continuous Integration']
     branches: [main]
     types:
       - completed
@@ -28,12 +28,16 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifacts
+          path: dist
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
