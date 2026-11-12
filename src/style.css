@@ -263,3 +263,86 @@ pre {
 .flip-second-half {
   animation: flip-second-half 0.3s ease-in forwards;
 }
+
+/* Keep the profile readable when the desktop split becomes too narrow. */
+@media (max-width: 1023px) {
+  body {
+    overflow: auto;
+    font-size: 16px;
+  }
+
+  .profile-picture {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    height: 40svh;
+  }
+
+  .profile-picture-background {
+    display: none;
+  }
+
+  .profile-data {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    min-height: 60svh;
+    margin-top: 40vh;
+    margin-top: 40svh;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    gap: 24px;
+    flex-wrap: nowrap;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .profile-data > .flex-item {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .section-1 > .fa-code {
+    font-size: 32px;
+  }
+
+  .section-1 h2 {
+    font-size: 28px;
+    margin: 16px 0 12px;
+  }
+
+  .section-1 p {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+  .section-1 a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 48px;
+    min-height: 48px;
+    padding: 10px;
+    font-size: 28px;
+  }
+
+  #flip-container,
+  #container,
+  .profile-data > .flex-item > .flex-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .profile-data > .flex-item > .flex-item {
+    padding-top: 0;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere;
+  }
+}
